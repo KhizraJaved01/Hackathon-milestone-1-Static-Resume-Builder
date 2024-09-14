@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="icon.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="left-content p-30">
+          <div class="logo">
+            <a href="#">
+              <span>My</span>
+              <span>Resume</span>
+            </a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="#" onclick="showSection('Home')">Home</a></li>
+              <li><a href="#" onclick="showSection('About')">About</a></li>
+              <li>
+                <a href="#" onclick="showSection('SkillsSection')">Skills</a>
+              </li>
+              <li>
+                <a href="#" onclick="showSection('Education')">Education</a>
+              </li>
+              <li>
+                <a href="#" onclick="showSection('Experience')">Experience</a>
+              </li>
+              <li><a href="#" onclick="showSection('Contact')">Contact</a></li>
+            </ul>
+          </div>
+          <div class="left-footer">
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="foot-contact">
+              <ul>
+                <li>
+                  <a href="mailto:khizrajaved401@gmail.com"
+                    >khizrajaved401@gmail.com</a
+                  >
+                </li>
+                <li>03111253412</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+          <!-- Home Section -->
+          <div class="section1 p-30" id="Home">
+            <div class="sec-title">
+              <div class="pg-sub-title">Home</div>
+              <div class="pg-title">My Profile</div>
+            </div>
+
+            <div class="user-profile">
+              <div class="pro-details">
+                <div class="sm-text">HELLO EVERYBODY, I AM</div>
+                <div class="name">Khizra Javed</div>
+                <div class="role">Front-End Developer</div>
+              </div>
+              <div class="text">
+                I specialize in building clean, efficient, and user-friendly
+                interfaces. My approach to development is rooted in
+                understanding user needs and delivering seamless experiences
+                through modern, responsive design.
+              </div>
+              <div class="pr-list">
+                <ul>
+                  <li>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 22nd
+                    November, 2006
+                  </li>
+                  <li>
+                    <i class="fa fa-phone" aria-hidden="true"></i> 03111253412
+                  </li>
+                  <li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    khizrajaved401@gmail.com
+                  </li>
+                  <li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Karachi, Pakistan
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Section -->
+          <div class="section1 p-30" id="About" style="display: none">
+            <div class="sec-title">
+              <div class="pg-sub-title">About</div>
+              <div class="pg-title">About Me</div>
+            </div>
+            <div class="text">
+              <p>
+                Hello! I'm Khizra Javed, a passionate Frontend Developer with a
+                keen eye for crafting modern and efficient web solutions. With a
+                strong foundation in HTML, CSS, JavaScript, TypeScript, and
+                Next.js, I continuously strive to push my limits and create
+                user-friendly, responsive, and visually appealing interfaces.
+              </p>
+              <p>
+                I am committed to staying updated with the latest technologies
+                and best practices in web development. My goal is to deliver
+                innovative solutions that not only meet but exceed client
+                expectations. I believe in clean code, thoughtful design, and a
+                seamless user experience.
+              </p>
+              <p>
+                If you're looking for someone who is hardworking, adaptable, and
+                ready to bring ideas to life, let's connect!
+              </p>
+            </div>
+          </div>
+          <!-- Skills Section -->
+          <div class="section1 p-30" id="SkillsSection">
+            <div class="sec-title">
+              <div class="pg-sub-title">Skills</div>
+              <div class="pg-title">Technical Skills</div>
+            </div>
+            <!-- Toggle Button -->
+            <button id="toggleButton">Skills</button>
+
+            <!-- Skills List (Initially hidden) -->
+            <div class="skills-list" id="Skills" style="display: none">
+              <ul>
+                <li><i class="fa fa-html"></i> HTML</li>
+                <li><i class="fa fa-css"></i> CSS</li>
+                <li><i class="fa fa-js"></i> JavaScript</li>
+                <li><i class="fa fa-ts"></i> TypeScript</li>
+                <li><i class="fa fa-next.js"></i> Next.js</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education Section -->
+          <div class="section1 p-30" id="Education" style="display: none">
+            <div class="sec-title">
+              <div class="pg-sub-title">Education</div>
+              <div class="pg-title">My Education</div>
+            </div>
+            <div class="education-list">
+              <ul>
+                <li><h3>Matriculation</h3></li>
+                <p>
+                  Successfully completed my matriculation with a focus on
+                  Medical Sciences, under the Karachi Board of Secondary
+                  Education.
+                </p>
+                <li><h3>Intermediate</h3></li>
+                <p>
+                  Completed my Intermediate in Pre-Engineering from the Karachi
+                  Board, gaining a strong foundation in technical and analytical
+                  subjects.
+                </p>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Section -->
+          <div class="section1 p-30" id="Experience" style="display: none">
+            <div class="sec-title">
+              <div class="pg-sub-title">Experience</div>
+              <div class="pg-title">My Experience</div>
+            </div>
+            <div class="text">
+              <p>
+                Over the past eight months, I've worked on personal projects that helped me enhance my technical skills and apply creative solutions to real-world challenges. This experience sharpened my coding practices and project management, consistently achieving project goals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="section1 p-30" id="Contact" style="display: none">
+            <div class="sec-title">
+              <div class="pg-sub-title">Contact</div>
+              <div class="pg-title">Get in Touch</div>
+            </div>
+            <div class="contact-details">
+              <ul>
+                <li>
+                  <h4>
+                    Email:
+                    <a href="mailto:khizrajaved401@gmail.com"
+                      >khizrajaved401@gmail.com</a
+                    >
+                  </h4>
+                </li>
+                <li><h4>Phone: 03111253412</h4></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll(".section1");
+        sections.forEach((section) => {
+          section.style.display = "none";
+        });
+
+        // Show the clicked section
+        document.getElementById(sectionId).style.display = "block";
+      }
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
